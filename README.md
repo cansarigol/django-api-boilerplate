@@ -1,1 +1,1 @@
-# dajngo-api-boilerplate
+# My django-api-boilerplate
