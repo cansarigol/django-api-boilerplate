@@ -1,8 +1,8 @@
 
-from django.conf.urls import path, include
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    path('api/v1/',include('mobile_api.urls'), name="v1"),
-    path('superadminsystemforsupertramps/', admin.site.urls),
+    path('api/v1/app/', include('app.urls')),
+    path('admin/', admin.site.urls),
 ]

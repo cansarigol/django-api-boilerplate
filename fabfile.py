@@ -22,7 +22,7 @@ def test(app_name="", method_name=""):
     """
     if app_name:
         covStr = " && coverage report | grep {0}".format(app_name.replace('test_','').replace('.py', ''))
-        app_name = "mobile_api/tests/{0}".format(app_name)
+        app_name = "tests/{0}".format(app_name)
         if method_name:
             app_name = "{0}::TestClass::{1}".format(app_name, method_name)
         app_name += covStr

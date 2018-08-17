@@ -2,7 +2,7 @@ import pytest
 from mixer.backend.django import mixer
 from rest_framework.test import APIClient
 from rest_framework import status
-from _project import generate_token
+from _project.utils import generate_token
 
 pytestmark = pytest.mark.django_db
 
